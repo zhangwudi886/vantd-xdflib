@@ -1,10 +1,5 @@
 language: node_js
 node_js:
   - "stable"
-script:
-  - npm test
-cache:
-  directories:
-    - node_modules
 env:
   - CI=true
