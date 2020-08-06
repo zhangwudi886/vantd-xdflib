@@ -24,5 +24,5 @@ export { default as Upload } from "./components/Upload";
 
 // // If you wan1t your app to work offline and load faster, you can change
 // // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about servic2e workers: https://bit.ly/CRA-PWA
+// // Learn more about servic2111e workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();

@@ -4,6 +4,7 @@ node_js:
 script:
   - npm install nrm -g
   - nrm use taobao
+  - npm install
   - npm test
 cache:
   directories:
