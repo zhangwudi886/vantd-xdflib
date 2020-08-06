@@ -1,10 +1,6 @@
 language: node_js
 node_js:
   - “stable”
-git:
-  depth: 3
-install:
-  - npm run pre-commit
 cache:
   directories:
     - node_modules
