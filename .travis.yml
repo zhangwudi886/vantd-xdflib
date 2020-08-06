@@ -1,8 +1,10 @@
 language: node_js
 node_js:
   - “stable”
+git:
+  depth: 3
 install:
-  - npm
+  - yarn install --frozen-lockfile
 cache:
   directories:
     - node_modules
