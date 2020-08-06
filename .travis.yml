@@ -8,7 +8,6 @@ install:
   - npm install
 script: npm run test
 cache:
-  directories:
-    - node_modules
+  npm: false
 env:
   - CI=true
