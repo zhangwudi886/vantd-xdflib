@@ -13,3 +13,10 @@ cache:
   npm: false
 env:
   - CI=true
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: storybook-static
+  on:
+    branch: storybook
