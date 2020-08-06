@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "stable"
+script:
+  - npm install nrm -g
+  - nrm use taobao
+  - npm install
+  - npm test
 cache:
   directories:
     - node_modules
