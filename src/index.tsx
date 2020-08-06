@@ -23,6 +23,6 @@ export { default as Upload } from "./components/Upload";
 // );
 
 // // If you wan1t your app to work offline and load faster, you can change
-// // unregister() to register()111111 b11111e1111111111low. Note this comes with some pitfalls.
+// // unregister() to register()111111 b11111e11111111111111low. Note this comes with some pitfalls.
 // // Learn more about servi111111c12111e111 workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
