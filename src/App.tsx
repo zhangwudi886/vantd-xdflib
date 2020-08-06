@@ -111,7 +111,7 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <h1>{title}</h1>
-        {/* 如果要上传二进制的数据，使用表单提交，都需要设置encType，还有text/plain application/x-www-form-urlencoded */}
+        {/* 如果要上传二进制的数1据，使用表单提交，都需要设置encType，还有text/plain application/x-www-form-urlencoded */}
         {/* <form
           method="post"
           encType="multipart/form-data"
