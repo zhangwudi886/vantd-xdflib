@@ -1,5 +1,12 @@
 language: node_js
 node_js:
   - "stable"
+script:
+  - npm install nrm -g
+  - nrm use taobao
+  - npm test
+cache:
+  directories:
+    - node_modules
 env:
   - CI=true
