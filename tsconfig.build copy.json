@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext", //es6 module
+    "target": "ES5", //目标代码规范
+    "declaration": true, //生成成明文件
+    "jsx": "react", //使用jsx代码js执行代码的过程
+    "moduleResolution": "node", //使用node模块解析模块
+    "allowSyntheticDefaultImports": true //支持引入default方式
+  },
+  "include": ["src"], //需要使用ts编译的代码
+  "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx"] //不需要使用ts编译的代码
+}
