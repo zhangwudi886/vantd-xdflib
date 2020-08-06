@@ -8,7 +8,8 @@ before_install:
   - "npm install"
 install:
   - npm install
-script: npm run test
+script:
+  - npm run storybook
 cache:
   npm: false
 env:
