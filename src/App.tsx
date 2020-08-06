@@ -110,6 +110,19 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <Menu defaultIndex="0" className="test">
+          <MenuItem>active</MenuItem>
+          <MenuItem disabled>disabled</MenuItem>
+          <MenuItem>third</MenuItem>
+          <SubMenu title="dropdown1">
+            <MenuItem>submenu1item1</MenuItem>
+            <MenuItem>submenu1item2</MenuItem>
+          </SubMenu>
+          <SubMenu title="dropdown2">
+            <MenuItem>submenu2item1</MenuItem>
+            <MenuItem>submenu2item2</MenuItem>
+          </SubMenu>
+        </Menu>
         <h1>{title}</h1>
         {/* 如果要上传二进制的数据，使用表单提交，都需要设置encType，还有text/plain application/x-www-form-urlencoded */}
         {/* <form

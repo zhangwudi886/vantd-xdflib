@@ -9,6 +9,20 @@ import {
 import Menu, { MenuProps } from "./menu";
 import MenuItem from "./menuItem";
 import SubMenu from "./subMenu";
+
+jest.mock("../Icon/icon", () => {
+  return () => {
+    return <i className="fa" />;
+  };
+});
+jest.mock("react-transition-group", () => {
+  return {
+    CSSTransition: (props: any) => {
+      return props.children;
+    },
+  };
+});
+
 const testProps: MenuProps = {
   defaultIndex: "0",
   onSelect: jest.fn(),
@@ -19,7 +33,7 @@ const testVerProps: MenuProps = {
   defaultIndex: "0",
   onSelect: jest.fn(),
   mode: "vertical",
-  defaultOpenSubMenus: ["4"],
+  defaultOpenSubMenus: ["0"],
 };
 const generateMenu = (props: MenuProps) => {
   return (

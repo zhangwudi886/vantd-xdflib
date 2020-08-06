@@ -75,7 +75,6 @@ export const Upload: FC<UploadProps> = (props) => {
   } = props;
   const fileInput = useRef<HTMLInputElement>(null);
   const [fileList, setFileList] = useState<UploadFile[]>(defaultFileList || []);
-  console.log(fileList);
   const updateFileList = (
     updateFile: UploadFile,
     updateObj: Partial<UploadFile>

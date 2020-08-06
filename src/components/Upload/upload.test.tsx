@@ -13,7 +13,7 @@ import { Upload, UploadProps } from "./upload";
 
 // 异步调用外部资源
 jest.mock("../Icon/icon", () => {
-  return ({ icon, onClick }) => {
+  return ({ icon = {}, onClick = () => {} }) => {
     return <span onClick={onClick}>{icon}</span>;
   };
 });
@@ -65,8 +65,9 @@ describe("test upload component", () => {
     expect(testProps.onChange).toHaveBeenCalledWith(testFile);
 
     //remove the uploaded file
-    expect(queryByText("times")).toBeInTheDocument();
-    fireEvent.click(queryByText("times"));
+    let timesElement = queryByText("times") as HTMLElement;
+    expect(timesElement).toBeInTheDocument();
+    fireEvent.click(timesElement);
     expect(queryByText("test.png")).not.toBeInTheDocument();
     expect(testProps.onRemove).toHaveBeenCalledWith(
       expect.objectContaining({
