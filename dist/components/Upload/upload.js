@@ -24,7 +24,6 @@ export var Upload = function (props) {
     var action = props.action, onProgress = props.onProgress, onSuccess = props.onSuccess, onError = props.onError, beforeUpload = props.beforeUpload, onChange = props.onChange, defaultFileList = props.defaultFileList, onRemove = props.onRemove, headers = props.headers, name = props.name, data = props.data, withCredentials = props.withCredentials, accept = props.accept, multiple = props.multiple, children = props.children, drag = props.drag;
     var fileInput = useRef(null);
     var _a = useState(defaultFileList || []), fileList = _a[0], setFileList = _a[1];
-    console.log(fileList);
     var updateFileList = function (updateFile, updateObj) {
         setFileList(function (prevList) {
             return prevList.map(function (file) {

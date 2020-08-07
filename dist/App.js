@@ -81,6 +81,16 @@ var App = function () {
     };
     return (React.createElement("div", { className: "App" },
         React.createElement("header", { className: "App-header" },
+            React.createElement(Menu, { defaultIndex: "0", className: "test" },
+                React.createElement(MenuItem, null, "active"),
+                React.createElement(MenuItem, { disabled: true }, "disabled"),
+                React.createElement(MenuItem, null, "third"),
+                React.createElement(SubMenu, { title: "dropdown1" },
+                    React.createElement(MenuItem, null, "submenu1item1"),
+                    React.createElement(MenuItem, null, "submenu1item2")),
+                React.createElement(SubMenu, { title: "dropdown2" },
+                    React.createElement(MenuItem, null, "submenu2item1"),
+                    React.createElement(MenuItem, null, "submenu2item2"))),
             React.createElement("h1", null, title),
             React.createElement("input", { type: "file", name: "file", onChange: handleFileChange }))));
 };
