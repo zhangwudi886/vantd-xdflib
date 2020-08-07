@@ -1,6 +1,6 @@
 {
   "name": "vantd-xdflib",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React UI Componet",
   "private": false,
   "main": "dist/index.js",
@@ -24,6 +24,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
     "react-transition-group": "^4.4.1"
   },
   "peerDependencies": {
@@ -47,7 +48,6 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-transition-group": "^4.4.0",
     "@types/storybook__addon-info": "^5.2.1",
-    "classnames": "^2.2.6",
     "cross-env": "^7.0.2",
     "husky": "^4.2.5",
     "node-sass": "^4.14.1",
