@@ -21,7 +21,7 @@ const ButtonWithSize = () => (
 const ButtonWithType = () => (
   <>
     <Button onClick={action("click")} btnType="primary">
-      primary button
+      primary button111
     </Button>
     <Button onClick={action("click")} btnType="danger">
       danger button
